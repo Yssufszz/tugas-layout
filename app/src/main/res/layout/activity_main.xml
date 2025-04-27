@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Mahasiswa"
+        android:textSize="22sp"
+        android:textColor="#FF6200EE"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logoy"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="10122082"
+        android:hint="NIM"
+        android:inputType="text"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        app:layout_constraintTop_toBottomOf="@id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"
+        android:elevation="4dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Yusuf Simangunsong"
+        android:hint="Nama"
+        android:inputType="text"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        app:layout_constraintTop_toBottomOf="@id/editTextText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"
+        android:elevation="4dp" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="IF-3"
+        android:hint="Kelas"
+        android:inputType="text"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        app:layout_constraintTop_toBottomOf="@id/editTextText3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proses Data"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextText4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
